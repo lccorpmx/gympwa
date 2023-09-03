@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Header/>
       <div className='text-center pt-8'>
-        <h1 className='text-6xl'>StreamGym</h1>
+        <h1 className='text-6xl'>VCFAM</h1>
         <p className='text-4xl'>¡Hola Arturo!</p>
         <p className='text-2xl'>Bienvenido</p>
       </div>

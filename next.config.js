@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// next.config.js
+const withPWA = require('next-pwa');
 
-module.exports = nextConfig
+module.exports = (phase, { defaultConfig }) => {
+  return withPWA({
+    pwa: {
+      dest: 'public',
+      register: true,
+    },
+    // Resto de las configuraciones de Next.js aquí (por ejemplo, reactStrictMode, webpack, etc.)
+    // ...
+  });
+};
